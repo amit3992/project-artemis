@@ -48,6 +48,8 @@ app.use(session({
 
 // Flash depends on session and cookie
 app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 /* Call routes */

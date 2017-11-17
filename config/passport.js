@@ -1,5 +1,6 @@
 const passport = require('passport'); // For authentication
-const localStrategy = require('passport-local').Strategy(); // For local logins
+const localStrategy = require('passport-local').Strategy; // For local logins
+const User = require('../models/user');
 
 
 /* Serialize and deserialize user objects */
